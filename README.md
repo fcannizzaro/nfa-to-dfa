@@ -6,6 +6,8 @@
 
 Convert NFA to DFA (json output) from (json input, .nfa file)
 
+[![npm](https://nodei.co/npm/nfa-to-dfa.png?downloads=true)](https://www.npmjs.com/package/nfa-to-dfa)
+
 
 ## Install
 ```sh
