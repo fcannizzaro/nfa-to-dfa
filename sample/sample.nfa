@@ -1,0 +1,18 @@
+nfa : Test NFA
+
+q0 {
+    start
+    loop c
+    goto q2 e
+}
+
+q1 {
+    loop a
+    goto q0 a
+}
+
+q2 {
+    end
+    loop y
+    goto q1 b
+}

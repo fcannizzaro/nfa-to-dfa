@@ -1,0 +1,17 @@
+nfa : Multi Initial State
+
+q1 {
+    start
+    loop a
+    goto q3 a
+}
+
+q2 {
+    start
+    loop b
+    goto q3 b
+}
+
+q3 {
+    end
+}

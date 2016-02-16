@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>nfa</string>
+	</array>
+	<key>name</key>
+	<string>NFA</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>support.class</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>(.*).*{|}</string>
+			<key>name</key>
+			<string>markup.raw</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>invalid.illegal</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>nfa\s*:\s*(.*)</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+		<dict>
+			<key>captures</key>
+			<dict>
+				<key>1</key>
+				<dict>
+					<key>name</key>
+					<string>markup.italic</string>
+				</dict>
+				<key>2</key>
+				<dict>
+					<key>name</key>
+					<string>markup.italic</string>
+				</dict>
+			</dict>
+			<key>match</key>
+			<string>start|end|loop(.*)|goto(.*)</string>
+			<key>name</key>
+			<string>string</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>source.nfa</string>
+	<key>uuid</key>
+	<string>2ebaaa9d-3803-4a46-aa33-a39bdf9383c3</string>
+</dict>
+</plist>
